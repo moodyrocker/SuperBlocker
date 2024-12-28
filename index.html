@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SuperFocus 2.0</title>
+  <!-- UIkit CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.19.2/dist/css/uikit.min.css" />
+
+  <style>
+
+
+    .highlight {
+      background-color: #e43c12;  /* Change this to your desired highlight color */
+      color: white;
+      transition: background-color 1s ease; /* Change the duration as needed */
+    }
+
+    .blocked-url {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 7px 5px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .url-text {
+      flex-grow: 1;
+    }
+
+    .remove-button-container {
+      margin-left: 10px;
+    }
+
+    .remove-button, .add-button {
+      background-color: #e43c12; /* Change this to your desired button color */
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .remove-button:hover, .add-button:hover {
+      background-color: #c12e10; /* Change this to your desired hover color */
+      
+    }
+
+    .url-list-container {
+      margin-top: 20px;
+    }
+  </style>
+<script src="fw.js"></script>
+</head>
+
+<body>
+
+
+
+  <div style="background-color: #e43c12" class="uk-padding"> <img src="https://supernines.com/sf/images/ogo_ye1.png">
+  </div>
+
+  <div class="uk-container uk-padding-small " style="width: 340px; background-color: #ede9e1;">
+    <div class="uk-margin">
+
+      <div style="color: #e43c12; margin-bottom: 25px; font-size: 20px; text-align: center;">STAY FOCUSED. BLOCK THE SITES THAT DISTRACT YOU.</div>
+   
+      <!-- <div id="count"></div> --->
+
+      <div> 
+        <ul id="url-list"></ul>
+        <div class="uk-grid uk-grid-collapse">
+          <div class="url-text uk-width-2-3">    <input class='uk-input' type="text" id="url-input" placeholder="Add URL to block"></div>
+          <div class=""><button id="add-url" class="add-button add-button:hover" style="padding: 12px 15px; margin-left: 10px;">Add</button></div>
+        </div>    
+        </ul>
+      </div>
+
+
+
+    </div>
+
+
+  </div> <!--- margin -->
+<div style="height: 7px; background-color: #e43c12;""> </div>
+  </div> <!--- container -->
+</body>
+
+</html>
